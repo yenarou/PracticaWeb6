@@ -1,0 +1,146 @@
+body {
+      background: white;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+
+    .card {
+      background: #f0ead6;
+      border: none;
+      border-radius: 16px;
+      width: 100%;
+      padding: 2rem;
+    }
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 2px solid #3a5a8a;
+      margin-bottom: 1.5rem;
+    }
+
+    .card-header img {
+      width: 52px;
+      height: 52px;
+    }
+
+    .card-header h1 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #1e2d4a;
+      margin: 0;
+      line-height: 1.2;
+    }
+
+    .card-header p {
+      font-size: 0.85rem;
+      color: #5a6a7a;
+      margin: 0;
+    }
+
+    .section-label {
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      color: #3a5a8a;
+      text-transform: uppercase;
+      border-bottom: 1.5px solid #748CAB;
+      padding-bottom: 0.4rem;
+      margin-bottom: 1rem;
+    }
+
+    .form-label {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #2c3e50;
+      margin-bottom: 0.3rem;
+    }
+
+    .optional-badge {
+      font-size: 0.7rem;
+      font-weight: 400;
+      color: #8a9ab0;
+      margin-left: 0.3rem;
+    }
+
+    .form-control, .form-select {
+      background: #f8f4ea;
+      border: 1.5px solid #748CAB;
+      border-radius: 8px;
+      color: #2c3e50;
+      font-size: 0.88rem;
+      padding: 0.55rem 0.9rem;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .form-control::placeholder {
+      color: #a0adb8;
+    }
+
+    .form-control:focus, .form-select:focus {
+      background: #fff;
+      border-color: #3a5a8a;
+      box-shadow: 0 0 0 3px rgba(58, 90, 138, 0.12);
+      color: #1e2d4a;
+    }
+
+    textarea.form-control {
+      resize: none;
+      min-height: 90px;
+    }
+
+    .form-check-input {
+      width: 1.15em;
+      height: 1.15em;
+      border: 1.5px solid #a0adb8;
+      border-radius: 4px;
+      margin-top: 0.15em;
+    }
+
+    .form-check-input:checked {
+      background-color: #1e2d4a;
+      border-color: #1e2d4a;
+    }
+
+    .form-check-label {
+      font-size: 0.85rem;
+      color: #3a4a5a;
+      line-height: 1.5;
+    }
+
+    .confirmation-box {
+      border: 1.5px solid #d4c9b0;
+      border-radius: 8px;
+      padding: 0.9rem 1rem;
+      background: #f8f4ea;
+    }
+
+    .btn-submit {
+      background: #1e2d4a;
+      color: #f0ead6;
+      border: none;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      padding: 0.7rem 2rem;
+      letter-spacing: 0.03em;
+      transition: background 0.2s, transform 0.1s;
+    }
+
+    .btn-submit:hover {
+      background: #2a4070;
+      color: #fff;
+    }
+
+    .btn-submit:active {
+      transform: scale(0.98);
+    }
+
+    .section-block {
+      margin-bottom: 1.5rem;
+    }
