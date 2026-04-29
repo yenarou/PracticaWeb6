@@ -14,32 +14,33 @@
 
     <div class="card-header">
       <span style="font-size:3rem; line-height:1;"></span>
+      <img src="https://cdn-icons-png.flaticon.com/512/53/53283.png" id="icono" alt="Icono de balon" class="header-icon">
       <div>
         <h1>Formulario de inscripción</h1>
         <p>Completa todos los campos para registrarte al torneo</p>
       </div>
     </div>
 
-    <form>
+    <form onsubmit="ValidarFormulario(event)">
 
       <div class="section-block">
         <div class="section-label">Datos Personales</div>
         <div class="row g-3">
           <div class="col-sm-6">
             <label class="form-label">Nombre completo</label>
-            <input type="text" class="form-control" placeholder="Ej. Juan Pérez López">
+            <input type="text" id="nombre" class="form-control" placeholder="Ej. Juan Pérez López">
           </div>
           <div class="col-sm-6">
             <label class="form-label">Número de teléfono</label>
-            <input type="tel" class="form-control" placeholder="Ej. 33 1234 5678">
+            <input type="tel" id="telefono" class="form-control" placeholder="Ej. 33 1234 5678">
           </div>
           <div class="col-sm-6">
             <label class="form-label">Dirección</label>
-            <input type="text" class="form-control" placeholder="Calle, número, colonia">
+            <input type="text" id="direccion" class="form-control" placeholder="Calle, número, colonia">
           </div>
           <div class="col-sm-6">
             <label class="form-label">Fecha de nacimiento</label>
-            <input type="text" class="form-control" placeholder="dd / mm / aaaa">
+            <input type="text" id="fecha-nacimiento" class="form-control" placeholder="dd / mm / aaaa">
           </div>
         </div>
       </div>
@@ -50,15 +51,15 @@
         <div class="row g-3">
           <div class="col-sm-6">
             <label class="form-label">Nombre del equipo</label>
-            <input type="text" class="form-control" placeholder="Ej. Leones FC">
+            <input type="text" id="nombre-equipo" class="form-control" placeholder="Ej. Leones FC">
           </div>
           <div class="col-sm-6">
             <label class="form-label">Número de jugador</label>
-            <input type="number" class="form-control" placeholder="Ej. 10">
+            <input type="number" id="numero-jugador" class="form-control" placeholder="Ej. 10">
           </div>
           <div class="col-12">
             <label class="form-label">Posición</label>
-            <input type="text" class="form-control" placeholder="Ej. Delantero, Portero...">
+            <input type="text" id="posicion" class="form-control" placeholder="Ej. Delantero, Portero...">
           </div>
         </div>
       </div>
@@ -69,14 +70,14 @@
         <div class="row g-3">
           <div class="col-sm-6">
             <label class="form-label">Alergias</label>
-            <textarea class="form-control" placeholder="Escribe si tienes alguna alergia"></textarea>
+            <textarea id="alergias" class="form-control" placeholder="Escribe si tienes alguna alergia"></textarea>
           </div>
           <div class="col-sm-6">
             <label class="form-label">
               Seguro social
               <span class="optional-badge">opcional</span>
             </label>
-            <input type="text" class="form-control" placeholder="XXXX-XXXX-XX">
+            <input type="text" id="seguro-social" class="form-control" placeholder="XXXX-XXXX-XX">
           </div>
         </div>
       </div>
@@ -102,5 +103,6 @@
     </form>
   </div>
 
+  <script src="script.js"></script>
 </body>
 </html>
